@@ -22,6 +22,5 @@ async def mewtwo(ctx):
     
 @bot.command()
 async def sasakoi(ctx):
-    await ctx.send("amzn.to/35V6kAy")
-    
+    await ctx.send('https://amazon.co.jp/dp/475802135X/')
 bot.run(token)
