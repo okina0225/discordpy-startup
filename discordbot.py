@@ -27,6 +27,7 @@ async def greet(ctx):
 @bot.cmmands()
 async def cat(ctx):
     await ctx.send("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif")
+    
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
@@ -34,7 +35,9 @@ async def ping(ctx):
 @bot.command()
 async def mewtwo(ctx):
     await ctx.send('みゅー')
+    
 @bot.command()
 async def sasakoi(ctx):
-    await ctx.send('amzn.to/35V6kAy')
+    await ctx.send("amzn.to/35V6kAy")
+    
 bot.run(token)
