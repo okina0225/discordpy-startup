@@ -38,14 +38,14 @@ async def cat(ctx):
     
 @bot.command()
 async def sasakoi1(ctx):
-    await ctx.send('https://amazon.co.jp/dp/B07T18R48L/')
+    await ctx.send('https://amazon.co.jp/gp/product/4758079501/')
     
 @bot.command()
 async def sasakoi2(ctx):
-    await ctx.send('https://amazon.co.jp/dp/B083TF11SS/')
+    await ctx.send('https://amazon.co.jp/gp/product/4758020744/')
     
 @bot.command()
 async def sasakoi3(ctx):
-    await ctx.send('https://amazon.co.jp/dp/B08CXH9K34/')
+    await ctx.send('https://amazon.co.jp/gp/product/475802135X/')
     
 bot.run(token)
