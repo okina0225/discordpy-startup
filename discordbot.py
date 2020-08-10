@@ -20,5 +20,7 @@ async def ping(ctx):
 @bot.command()
 async def mewtwo(ctx):
     await ctx.send('みゅー')
-
+@bot.command()
+async def ささ恋(ctx):
+    await ctx.send('amzn.to/35V6kAy')
 bot.run(token)
