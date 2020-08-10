@@ -21,6 +21,15 @@ async def mewtwo(ctx):
     await ctx.send('みゅー')
     
 @bot.command()
-async def sasakoi(ctx):
-    await ctx.send('https://amazon.co.jp/dp/475802135X/')
+async def sasakoi1(ctx):
+    await ctx.send('https://amazon.co.jp/dp/B07T18R48L/')
+    
+@bot.command()
+async def sasakoi2(ctx):
+    await ctx.send('https://amazon.co.jp/dp/B083TF11SS/')
+    
+@bot.command()
+async def sasakoi3(ctx):
+    await ctx.send('https://amazon.co.jp/dp/B08CXH9K34/')
+    
 bot.run(token)
