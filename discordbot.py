@@ -18,4 +18,7 @@ async def ping(ctx):
     await ctx.send('pong')
 
 
+@bot.command()
+async def mewtwo(ctx):
+    await ctx.send('みゅー')
 bot.run(token)
