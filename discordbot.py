@@ -21,6 +21,22 @@ async def mewtwo(ctx):
     await ctx.send('みゅー')
     
 @bot.command()
+async def add(ctx, a: int, b: int):
+    await ctx.send(a+b)
+
+@bot.command()
+async def multiply(ctx, a: int, b: int):
+    await ctx.send(a*b)
+
+@bot.command()
+async def greet(ctx):
+    await ctx.send(":smiley: :wave: Hello, there!")
+
+@bot.cmmands()
+async def cat(ctx):
+    await ctx.send("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif")
+    
+@bot.command()
 async def sasakoi1(ctx):
     await ctx.send('https://amazon.co.jp/dp/B07T18R48L/')
     
