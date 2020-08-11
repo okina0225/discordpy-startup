@@ -35,19 +35,9 @@ async def sasakoi2(ctx):
 async def sasakoi3(ctx):
     await ctx.send('https://amazon.co.jp/gp/product/475802135X/')
     
-@client.event       
-async def on_ready():
-    print('Logged in as')
-    print(client.user.name)
-    print(client.user.id)
-    print('------')
-
 @client.event
-async def on_message(message):
-    if message.content.startswith("!dice"): #ここの!diceは好きなのにしていいぞ
-        if client.user != message.author:
-            num_random = random.randrange(1,6)
-            m = str(num_random)
-            await client.send_message(message.channel, m)
+async def on_ready():
+    # 起動したらターミナルにログイン通知が表示される
+    print('ログインしました')
     
 bot.run(token)
