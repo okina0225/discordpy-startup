@@ -22,7 +22,6 @@ async def ping(ctx):
 async def mewtwo(ctx):
     await ctx.send('みゅー')
     
-    
 @bot.command()
 async def sasakoi1(ctx):
     await ctx.send('https://amazon.co.jp/gp/product/4758079501/')
@@ -34,6 +33,20 @@ async def sasakoi2(ctx):
 @bot.command()
 async def sasakoi3(ctx):
     await ctx.send('https://amazon.co.jp/gp/product/475802135X/')
-      
+    
+@client.event       
+async def on_ready():
+    print('Logged in as')
+    print(client.user.name)
+    print(client.user.id)
+    print('------')
+
+@client.event
+async def on_message(message):
+    if message.content.startswith("!dice"): #ここの!diceは好きなのにしていいぞ
+        if client.user != message.author:
+            num_random = random.randrange(1,6)
+            m = str(num_random)
+            await client.send_message(message.channel, m)
     
 bot.run(token)
