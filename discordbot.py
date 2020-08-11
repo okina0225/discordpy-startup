@@ -35,9 +35,6 @@ async def sasakoi2(ctx):
 async def sasakoi3(ctx):
     await ctx.send('https://amazon.co.jp/gp/product/475802135X/')
     
-@client.event
-async def on_ready():
-    # 起動したらターミナルにログイン通知が表示される
-    print('ログインしました')
+
     
 bot.run(token)
