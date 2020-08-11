@@ -32,6 +32,5 @@ async def sasakoi2(ctx):
 async def sasakoi3(ctx):
     await ctx.send('https://amazon.co.jp/gp/product/475802135X/')
     
-
     
 bot.run(token)
