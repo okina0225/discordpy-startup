@@ -35,12 +35,9 @@ async def sasakoi2(ctx):
 async def sasakoi3(ctx):
     await ctx.send('https://amazon.co.jp/gp/product/475802135X/')
 
+        
 @bot.command()
-async def dedennne(ctx):
-    i = random.random():
-     if i<=0.5:
-        await ctx.send('https://app-date.net/dendedendendendedenne/')
-        elif
-        await ctx.send('https://app-date.net/7thdedenne/')
+async def ototake(ctx):
+    await ctx.send('https://www.instagram.com/p/BsDXOPEDOCZ/')        
     
 bot.run(token)
